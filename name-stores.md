@@ -1,2 +1,2 @@
-# Name Stores and Metadata
+# Naming Stores and Metadata
 
