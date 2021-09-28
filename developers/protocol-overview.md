@@ -50,7 +50,7 @@ This is the implementation of the main store smart contract.
 
 \_\_
 
-* _updateOwner\(\)_  -  This function is used to change the 
+* _updateOwner\(\)_  -  This function is used to change the current owner of the store.
 
 ## mUSDC.sol
 
