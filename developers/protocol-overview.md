@@ -38,15 +38,15 @@ This is the implementation of the main store smart contract.
 
 
 
-* _transferCollateral\(\)_  -  _This function is used to transfer collateral to a valid store based on the selected aToken._
+* _transferCollateral\(\)_  -  __This function is used to transfer collateral to a valid store based on the selected aToken_._
 
 \_\_
 
-* _sellCollateral\(\)  -  This function is used to sell collateral to a valid store based on the selected aToken._
+* _sellCollateral\(\)  -_  This function is used to sell collateral to a valid store based on the selected aToken_._
 
 \_\_
 
-* _updateExtension\(\)  -  This functions is used to change the current extension the store is using._
+* _updateExtension\(\)  -_  This functions is used to change the current extension the store is using_._
 
 \_\_
 
@@ -54,15 +54,25 @@ This is the implementation of the main store smart contract.
 
 ## mUSDC.sol
 
+{% hint style="info" %}
+Please not that this contracts implements all functions of the ERC20 standard expect the following. 
+{% endhint %}
+
 
 
 ## mUSDT.sol
+
+{% hint style="info" %}
+Please not that this contracts implements all functions of the ERC20 standard expect the following. 
+{% endhint %}
 
 
 
 ## mDAI.sol
 
-
+{% hint style="info" %}
+Please not that this contracts implements all functions of the ERC20 standard expect the following. 
+{% endhint %}
 
 ## metadata.sol
 
