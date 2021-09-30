@@ -1,2 +1,35 @@
 # Extensions
 
+Extensions will be extremely important for sellers wishing to perform additional task after receiving payments. They are essentially a smart contract that is called to perform minimal tasks. They can be used for a wide range of activities such as sending NFTs to a customer. 
+
+{% hint style="info" %}
+Please note that adding Extensions to a store will cost the customer additional gas to perform a transaction. The responsibility falls on the developer of the Extension to ensure that the gas cost is optimal.  
+{% endhint %}
+
+## Example
+
+```javascript
+pragma solidity ^0.8.4;
+//SPDX-License-Identifier: MIT
+
+
+contract Extension {
+
+    /// @param _customer The address of the customer who made the payment
+    /// @param _tokenID The id of the ERC721 token the customer paid for
+    /// @param _amount The amount in customer paid for the item
+    function processPayment(address _customer, uint256 _tokenID, uint256 _amount) external {
+        //require(msg.sender == ) IMPORTANT!! check that sender is the corrent mToken contract.
+        
+        /**
+         * Write code to perform additional task after receiving payment
+         * such as sending NFTs and checking the amount sent.
+        **/
+    }
+}
+```
+
+This is a simple example of an Extension that is suppose to implement the _processPayment\(\)_ function.
+
+
+

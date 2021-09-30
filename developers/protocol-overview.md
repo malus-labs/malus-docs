@@ -1,6 +1,6 @@
 # Protocol Overview
 
-The protocol consist of six main smart contracts and four of which are the main core of the application. The figure provided below is a high level overview of the Malus protocol and how it works. 
+The protocol consist of five main smart contracts and four of which are the main core of the application. The figure provided below is a high level overview of the Malus protocol and how it works. 
 
 {% hint style="info" %}
 Please note that this figure only uses USDC, aUSDC, and mUSDC. Each store has to ability to produce mUSDT and mDAI based on the staked aUSDT and aDAI respectively. 
@@ -78,7 +78,7 @@ Please not that this contracts implements all functions of the ERC20 standard ex
 
 
 
-## verification.sol
+
 
 
 
