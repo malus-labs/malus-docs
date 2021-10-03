@@ -29,7 +29,7 @@ contract Extension {
 }
 ```
 
-This is a simple example of an Extension that is suppose to implement the _processPayment\(\)_ function.
+This is a simple example of an Extension that is suppose to implement the _processPayment\(\)_ function. In addition, If you are using extensions for NFTs, one suggestion would be to use one Extension to manage multiple NFTs. This could help to change ownership on the extension rather than calling multiple different ERC721 contracts. It would reduce the gas cost on customers and avoid creating an Extension for each NFT. The way to achieve this is by mapping the \_tokenID parameter to a struct. The struct could contain other information such as the NFT contract address, tokenID, and amount required for payment. 
 
 
 
