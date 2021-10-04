@@ -189,7 +189,7 @@ This function is used to change the current owner of the store.
 ## mUSDC.sol
 
 {% hint style="info" %}
-Please not that this contracts implements all functions of the ERC20 standard expect the following. In addition, stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer might be rejected. 
+Please note that stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer will be rejected. This contracts implements all functions of the ERC20 standard expect the following.
 {% endhint %}
 
 
@@ -249,7 +249,7 @@ This function is used to pay a store with mUSDC and burn mUSDC token once payed.
 ## mUSDT.sol
 
 {% hint style="info" %}
-Please not that this contracts implements all functions of the ERC20 standard expect the following. In addition, stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer might be rejected. 
+Please note that stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer will be rejected. This contracts implements all functions of the ERC20 standard expect the following.
 {% endhint %}
 
 ## 
@@ -257,7 +257,7 @@ Please not that this contracts implements all functions of the ERC20 standard ex
 ## mDAI.sol
 
 {% hint style="info" %}
-Please not that this contracts implements all functions of the ERC20 standard expect the following. In addition, stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer might be rejected. 
+Please note that stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer will be rejected. This contracts implements all functions of the ERC20 standard expect the following.
 {% endhint %}
 
 ## 
