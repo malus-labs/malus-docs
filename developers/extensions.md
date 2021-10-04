@@ -15,10 +15,10 @@ pragma solidity ^0.8.4;
 
 contract Extension {
 
-    /// @param _customer The address of the customer who made the payment
-    /// @param _tokenID The id of the ERC721 token the customer paid for
-    /// @param _amount The amount in customer paid for the item
-    function processPayment(address _customer, uint256 _tokenID, uint256 _amount) external {
+    /// @param customer The address of the customer who made the payment
+    /// @param tokenID The id of the ERC721 token the customer paid for
+    /// @param amount The amount in customer paid for the item
+    function processPayment(address customer, uint256 tokenID, uint256 amount) external {
         //require(msg.sender == ) IMPORTANT!! check that sender is the corrent mToken contract.
         
         /**
