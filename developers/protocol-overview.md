@@ -8,7 +8,7 @@ Please note that this figure only uses USDC, aUSDC, and mUSDC. Each store has to
 
 ![](../.gitbook/assets/malus-usdc-flow-chart.jpg)
 
-The first three smart contracts we will cover are the main core of the application.
+The first four smart contracts we will cover are the main core of the application.
 
 ## store.sol
 

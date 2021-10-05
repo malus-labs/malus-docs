@@ -10,6 +10,8 @@
 
 ## What is the minimum and maximum amount I can spend?
 
+## How much gas does it cost?
+
 ## How do I verify my ENS name?
 
 
