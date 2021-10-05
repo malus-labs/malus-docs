@@ -24,7 +24,7 @@ Before getting familiar with the functions, we first need to understand the opti
 
 The following functions are the main function that govern the store implementation. Only the owner of a store is able to call these functions.
 
-```text
+```javascript
 function sendERC20(
    address tokenContract, 
    address to, 
@@ -42,7 +42,7 @@ This function can be used to send all ERC20 tokens from the store. Note that sen
 
 
 
-```text
+```javascript
 function claimStoreHubBalance(
    uint option
 )
@@ -56,7 +56,7 @@ This function is used to withdraw all the total payment from the store hub and r
 
 
 
-```text
+```javascript
 function getExtensionStake(
    uint option
 )
@@ -70,7 +70,7 @@ This function is used to return the current extension and amount of stake by aTo
 
 \_\_
 
-```text
+```javascript
 function addStake(
    uint256 amount,
    uint option
@@ -86,7 +86,7 @@ This function is used to add stake by the selected aToken to the amount already 
 
 
 
-```text
+```javascript
 function getExtensionCollateral(
    uint option
 )
@@ -100,7 +100,7 @@ function getExtensionCollateral(
 
 
 
-```text
+```javascript
 function provideCollateralRelief(
    uint256 amount, 
    uint256 rate, 
@@ -120,7 +120,7 @@ This function is used to add and remove collateral relief based on the selected 
 
 
 
-```text
+```javascript
 function transferCollateral(
    StoreInterface store, 
    uint256 amount, 
@@ -138,7 +138,7 @@ This function is used to transfer collateral to a valid store based on the selec
 
 \_\_
 
-```text
+```javascript
 function sellCollateral(
    StoreInterface store,
    uint256 amount,
@@ -158,7 +158,7 @@ This function is used to sell collateral to a valid store based on the selected 
 
 \_\_
 
-```text
+```javascript
 function updateExtension(
    address newExtension
 )
@@ -172,7 +172,7 @@ This functions is used to change the current extension the store is using_._
 
 \_\_
 
-```text
+```javascript
 function updateOwner(
    address newOwner
 )
@@ -184,7 +184,9 @@ This function is used to change the current owner of the store.
 | :--- | :--- | :--- |
 | **newOwner** | address | The address of the new Owner controlling this store. |
 
-## 
+
+
+
 
 ## mUSDC.sol
 
@@ -194,7 +196,7 @@ Please note that stores are not meant to hold mTokens. They will be burnt if sen
 
 
 
-```text
+```javascript
 function deployStore()
 ```
 
@@ -206,7 +208,7 @@ This is the main function that is used to deploy new stores in the protocol. The
 
 
 
-```text
+```javascript
 function mint(
    StoreInterface store, 
    uint256 tokenID, 
@@ -224,7 +226,7 @@ This function is used to pay a store with USDC and mint mUSDC tokens to the cust
 
 
 
-```text
+```javascript
 function burn(
    StoreInterface store, 
    address from, 
@@ -233,7 +235,7 @@ function burn(
 )
 ```
 
-This function is used to pay a store with mUSDC and burn mUSDC token once payed.
+This function is used to pay a store with mUSDC and burn it once payed.
 
 | Name | Type | Description |
 | :--- | :--- | :--- |
@@ -252,7 +254,47 @@ This function is used to pay a store with mUSDC and burn mUSDC token once payed.
 Please note that stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer will be rejected. This contracts implements all functions of the ERC20 standard expect the following.
 {% endhint %}
 
-## 
+
+
+```javascript
+function mint(
+   StoreInterface store, 
+   uint256 tokenID, 
+   uint256 amount
+)
+```
+
+This function is used to pay a store with USDT and mint mUSDT tokens to the customer paying.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **store** | address | The address of the store the customer is paying. |
+| **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
+| **amount** | uint256 | The amount of USDT the customer is paying with. |
+
+
+
+```javascript
+function burn(
+   StoreInterface store, 
+   address from, 
+   uint256 tokenID, 
+   uint256 amount
+)
+```
+
+This function is used to pay a store with mUSDT and burn it once payed.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **store** | address | The address of the store the customer is paying. |
+| **from** | address | The address of the customer making the payment. |
+| **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
+| **amount** | uint256 | The amount of mUSDT the customer is paying with. |
+
+
+
+
 
 ## mDAI.sol
 
@@ -260,11 +302,69 @@ Please note that stores are not meant to hold mTokens. They will be burnt if sen
 Please note that stores are not meant to hold mTokens. They will be burnt if sent to a store with collateral or the transfer will be rejected. This contracts implements all functions of the ERC20 standard expect the following.
 {% endhint %}
 
-## 
+
+
+```javascript
+function mint(
+   StoreInterface store, 
+   uint256 tokenID, 
+   uint256 amount
+)
+```
+
+This function is used to pay a store with DAI and mint mDAI tokens to the customer paying.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **store** | address | The address of the store the customer is paying. |
+| **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
+| **amount** | uint256 | The amount of DAI the customer is paying with. |
+
+
+
+```javascript
+function burn(
+   StoreInterface store, 
+   address from, 
+   uint256 tokenID, 
+   uint256 amount
+)
+```
+
+This function is used to pay a store with mDAI and burn it once payed.
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **store** | address | The address of the store the customer is paying. |
+| **from** | address | The address of the customer making the payment. |
+| **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
+| **amount** | uint256 | The amount of mDAI the customer is paying with. |
+
+
+
+
 
 ## metadata.sol
 
+```javascript
+function setMetaData(
+   address store, 
+   string[7] calldata metaData
+)
+```
 
+This function is used to set the Store's ENS name and other descriptive information such as city, type, zip code etc. Note that only the currently owner of a store can update its metadata. 
+
+| Name | Type | Description |
+| :--- | :--- | :--- |
+| **store** | address | The address of the store to set the metadata. |
+| **metaData\[0\]** | string | The node for the ENS name.  |
+| **metaData\[1\]** | string | The country for the store. |
+| **metaData\[2\]** | string | The city for the store. |
+| **metaData\[3\]** | string | The street for the store. |
+| **metaData\[4\]** | string | The website for the store. |
+| **metaData\[5\]** | string | The type for the store. |
+| **metaData\[6\]** | string | The zip code for the store. |
 
 
 

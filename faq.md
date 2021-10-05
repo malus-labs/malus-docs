@@ -18,6 +18,8 @@ This all depends on two factors which are the gas fees and the amount staked. An
 
 ## How much gas does it cost?
 
+## 
+
 ## How do I verify my ENS name?
 
 
