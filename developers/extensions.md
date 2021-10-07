@@ -2,7 +2,7 @@
 
 Extensions will be extremely important for sellers wishing to perform additional task after receiving payments. They are essentially a smart contract that is called to perform minimal tasks. They can be used for a wide range of activities such as sending NFTs to a customer. 
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Please note that adding Extensions to a store will cost the customer additional gas to perform a transaction. The responsibility falls on the developer of the Extension to ensure that the gas cost is optimal.  
 {% endhint %}
 
