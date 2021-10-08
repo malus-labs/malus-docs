@@ -6,7 +6,9 @@ Extensions will be extremely important for sellers wishing to perform additional
 Please note that adding Extensions to a store will cost the customer additional gas to perform a transaction. The responsibility falls on the developer of the Extension to ensure that the gas cost is optimal.  
 {% endhint %}
 
-## Example
+### 
+
+### Example
 
 ```javascript
 pragma solidity ^0.8.4;
