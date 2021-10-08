@@ -1,6 +1,6 @@
 # Filter and Pay
 
-Before we are able pay, we first need to filter for the store we want to send our payment. We are able to filter by ENS name, Wallet Address, City, Zip code, or Store type. 
+Before we are able pay, we first need to filter for the store we want to send our payment. We are able to filter by ENS name, wallet address, city, zip code, or store type. 
 
 ### 
 
