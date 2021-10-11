@@ -15,10 +15,10 @@ The first four smart contracts we will cover are the main core of the applicatio
 Before getting familiar with the functions, we first need to understand the options available and their associated aTokens and mTokens.
 
 | Option | aToken | mToken |
-| :--- | :--- | :--- |
-| 0 | aUSDC | mUSDC |
-| 1 | aUSDT | mUSDT |
-| 2 | aDAI | mDAI |
+| ------ | ------ | ------ |
+| 0      | aUSDC  | mUSDC  |
+| 1      | aUSDT  | mUSDT  |
+| 2      | aDAI   | mDAI   |
 
 
 
@@ -34,11 +34,11 @@ function sendERC20(
 
 This function can be used to send all ERC20 tokens from the store. Note that sending aTokens requires that only the available amount can be sent. 
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **tokenContract** | address | The address of the ERC20 smart contract. |
-| **to** | address | The address of the tokens are being sent to. |
-| **amount** | uint256 | The amount of tokens to send. |
+| Name              | Type    | Description                                  |
+| ----------------- | ------- | -------------------------------------------- |
+| **tokenContract** | address | The address of the ERC20 smart contract.     |
+| **to**            | address | The address of the tokens are being sent to. |
+| **amount**        | uint256 | The amount of tokens to send.                |
 
 
 
@@ -50,8 +50,8 @@ function claimStoreHubBalance(
 
 This function is used to withdraw all the total payment from the store hub and remove any additional stake by the specified aToken. 
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name       | Type | Description                           |
+| ---------- | ---- | ------------------------------------- |
 | **option** | uint | The option for the associated aToken. |
 
 
@@ -62,13 +62,13 @@ function getExtensionStake(
 )
 ```
 
-This function is used to return the current extension and amount of stake by aToken associated with a store.  __
+This function is used to return the current extension and amount of stake by aToken associated with a store. _ _
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name       | Type | Description                           |
+| ---------- | ---- | ------------------------------------- |
 | **option** | uint | The option for the associated aToken. |
 
-\_\_
+__
 
 ```javascript
 function addStake(
@@ -79,10 +79,10 @@ function addStake(
 
 This function is used to add stake by the selected aToken to the amount already stake.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **amount** | uint256 | The amount of stake to add. |
-| **option** | uint | The option for the associated aToken. |
+| Name       | Type    | Description                           |
+| ---------- | ------- | ------------------------------------- |
+| **amount** | uint256 | The amount of stake to add.           |
+| **option** | uint    | The option for the associated aToken. |
 
 
 
@@ -94,8 +94,8 @@ function getExtensionCollateral(
 
  This function is used to return the current extension and amount of collateral by aToken associated with a store.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name       | Type | Description                           |
+| ---------- | ---- | ------------------------------------- |
 | **option** | uint | The option for the associated aToken. |
 
 
@@ -111,12 +111,12 @@ function provideCollateralRelief(
 
 This function is used to add and remove collateral relief based on the selected aToken. 
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **amount** | uint256 | The amount of collateral relief. |
-| **rate** | uint256 | The rate for the collateral relief. |
-| **option** | uint | The option for the associated aToken. |
-| **didAddRelief** | bool | The boolean value deciding if relief should be added or removed. |
+| Name             | Type    | Description                                                      |
+| ---------------- | ------- | ---------------------------------------------------------------- |
+| **amount**       | uint256 | The amount of collateral relief.                                 |
+| **rate**         | uint256 | The rate for the collateral relief.                              |
+| **option**       | uint    | The option for the associated aToken.                            |
+| **didAddRelief** | bool    | The boolean value deciding if relief should be added or removed. |
 
 
 
@@ -130,13 +130,13 @@ function transferCollateral(
 
 This function is used to transfer collateral to a valid store based on the selected aToken_._
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store to send the collateral. |
-| **amount** | uint256 | The amount of collateral to transfer.  |
-| **option** | uint | The option for the associated aToken. |
+| Name       | Type    | Description                                      |
+| ---------- | ------- | ------------------------------------------------ |
+| **store**  | address | The address of the store to send the collateral. |
+| **amount** | uint256 | The amount of collateral to transfer.            |
+| **option** | uint    | The option for the associated aToken.            |
 
-\_\_
+__
 
 ```javascript
 function sellCollateral(
@@ -149,14 +149,14 @@ function sellCollateral(
 
 This function is used to sell collateral to a valid store based on the selected aToken_._
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store to send the collateral. |
-| **amount** | uint256 | The amount of collateral to sell.  |
-| **rate** | uint256 | The rate for the collateral to sell. |
-| **option** | uint | The option for the associated aToken. |
+| Name       | Type    | Description                                      |
+| ---------- | ------- | ------------------------------------------------ |
+| **store**  | address | The address of the store to send the collateral. |
+| **amount** | uint256 | The amount of collateral to sell.                |
+| **rate**   | uint256 | The rate for the collateral to sell.             |
+| **option** | uint    | The option for the associated aToken.            |
 
-\_\_
+__
 
 ```javascript
 function updateExtension(
@@ -166,11 +166,11 @@ function updateExtension(
 
 This functions is used to change the current extension the store is using_._
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name             | Type    | Description                                                     |
+| ---------------- | ------- | --------------------------------------------------------------- |
 | **newExtension** | address | The address of the new Extension that will be added to a store. |
 
-\_\_
+__
 
 ```javascript
 function updateOwner(
@@ -180,8 +180,8 @@ function updateOwner(
 
 This function is used to change the current owner of the store.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
+| Name         | Type    | Description                                          |
+| ------------ | ------- | ---------------------------------------------------- |
 | **newOwner** | address | The address of the new Owner controlling this store. |
 
 
@@ -203,8 +203,8 @@ function deployStore()
 This is the main function that is used to deploy new stores in the protocol. The caller will be the owner of the newly deployed store.
 
 | Name | Type | Description |
-| :--- | :--- | :--- |
-|  |  |  |
+| ---- | ---- | ----------- |
+|      |      |             |
 
 
 
@@ -218,11 +218,11 @@ function mint(
 
 This function is used to pay a store with USDC and mint mUSDC tokens to the customer paying.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of USDC the customer is paying with. |
+| **amount**  | uint256 | The amount of USDC the customer is paying with.    |
 
 
 
@@ -237,12 +237,12 @@ function burn(
 
 This function is used to pay a store with mUSDC and burn it once payed.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
-| **from** | address | The address of the customer making the payment. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
+| **from**    | address | The address of the customer making the payment.    |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of mUSDC the customer is paying with. |
+| **amount**  | uint256 | The amount of mUSDC the customer is paying with.   |
 
 
 
@@ -266,11 +266,11 @@ function mint(
 
 This function is used to pay a store with USDT and mint mUSDT tokens to the customer paying.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of USDT the customer is paying with. |
+| **amount**  | uint256 | The amount of USDT the customer is paying with.    |
 
 
 
@@ -285,12 +285,12 @@ function burn(
 
 This function is used to pay a store with mUSDT and burn it once payed.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
-| **from** | address | The address of the customer making the payment. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
+| **from**    | address | The address of the customer making the payment.    |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of mUSDT the customer is paying with. |
+| **amount**  | uint256 | The amount of mUSDT the customer is paying with.   |
 
 
 
@@ -314,11 +314,11 @@ function mint(
 
 This function is used to pay a store with DAI and mint mDAI tokens to the customer paying.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of DAI the customer is paying with. |
+| **amount**  | uint256 | The amount of DAI the customer is paying with.     |
 
 
 
@@ -333,12 +333,12 @@ function burn(
 
 This function is used to pay a store with mDAI and burn it once payed.
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store the customer is paying. |
-| **from** | address | The address of the customer making the payment. |
+| Name        | Type    | Description                                        |
+| ----------- | ------- | -------------------------------------------------- |
+| **store**   | address | The address of the store the customer is paying.   |
+| **from**    | address | The address of the customer making the payment.    |
 | **tokenID** | uint256 | The ID number to be sent to the store's Extension. |
-| **amount** | uint256 | The amount of mDAI the customer is paying with. |
+| **amount**  | uint256 | The amount of mDAI the customer is paying with.    |
 
 
 
@@ -355,18 +355,16 @@ function setMetaData(
 
 This function is used to set the Store's ENS name and other descriptive information such as city, type, zip code etc. Note that only the currently owner of a store can update its metadata. 
 
-| Name | Type | Description |
-| :--- | :--- | :--- |
-| **store** | address | The address of the store to set the metadata. |
-| **metaData\[0\]** | string | The node for the ENS name.  |
-| **metaData\[1\]** | string | The country for the store. |
-| **metaData\[2\]** | string | The city for the store. |
-| **metaData\[3\]** | string | The street for the store. |
-| **metaData\[4\]** | string | The website for the store. |
-| **metaData\[5\]** | string | The type for the store. |
-| **metaData\[6\]** | string | The zip code for the store. |
-
-
+| Name             | Type    | Description                                   |
+| ---------------- | ------- | --------------------------------------------- |
+| **store**        | address | The address of the store to set the metadata. |
+| **metaData\[0]** | string  | The node for the ENS name.                    |
+| **metaData\[1]** | string  | The country for the store.                    |
+| **metaData\[2]** | string  | The city for the store.                       |
+| **metaData\[3]** | string  | The street for the store.                     |
+| **metaData\[4]** | string  | The website for the store.                    |
+| **metaData\[5]** | string  | The type for the store.                       |
+| **metaData\[6]** | string  | The zip code for the store.                   |
 
 
 
