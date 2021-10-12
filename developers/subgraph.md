@@ -1,4 +1,3 @@
 # Subgraph
 
-Work in progress.
-
+Coming soon.
