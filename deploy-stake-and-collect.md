@@ -1,6 +1,6 @@
 # Deploy, Stake, and Collect
 
-This page is for users who are selling their goods and services and don't wish to give discounts. We will provide steps helping you setting a store to better help your customers.
+This page is for users who are selling their goods and services and don't wish to give discounts. We will provide steps that will help you setup a store to better service your customers.
 
 
 
@@ -42,7 +42,7 @@ Please note that you should only send V2 of Aave's aTokens to the store contract
 
 ### Step5
 
-Once the transaction is completed, we can head on over to the stake section of the store by clicking the second icon on the left. Next, we must ensure that the toggle is set to add. We will add 70 aUSDC as colleteral and click update.
+Once the transaction is completed, we can head on over to the stake section of the store by clicking the second icon on the left. Next, we must ensure that the toggle is set to add. We will stake 70 aUSDC and click update.
 
 ![](.gitbook/assets/Step5.png)
 
