@@ -3,7 +3,7 @@
 * [Introduction](README.md)
 * [Filter and Pay](filter-and-pay.md)
 * [Deploy, Stake, and Collect](deploy-stake-and-collect.md)
-* [Naming Stores and Metadata](name-stores.md)
+* [Naming Stores and Description](name-stores-and-description.md)
 * [Glossary](glossary.md)
 * [FAQ](faq.md)
 
@@ -12,4 +12,3 @@
 * [Protocol Overview](developers/protocol-overview.md)
 * [Extensions](developers/extensions.md)
 * [Subgraph](developers/subgraph.md)
-

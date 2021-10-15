@@ -16,7 +16,7 @@ Make sure you are in the manage section of the application and click the deploy 
 
 Once the store is deployed, we can hover over the store and observe that the available funds, collateral, stake, and collateral relief are all zero. We can proceed to click on the store. 
 
-![](.gitbook/assets/Step2.png)
+![](<.gitbook/assets/Step2 (1).png>)
 
 
 
@@ -24,7 +24,7 @@ Once the store is deployed, we can hover over the store and observe that the ava
 
 Since this store has no money inside of it, we need to copy the wallet address which can be found under the qrcode. 
 
-![](.gitbook/assets/Step3.png)
+![](<.gitbook/assets/Step3 (1).png>)
 
 
 
