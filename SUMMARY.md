@@ -11,4 +11,4 @@
 
 * [Protocol Overview](developers/protocol-overview.md)
 * [Extensions](developers/extensions.md)
-* [Subgraph](developers/subgraph.md)
+* [Subgraphs](developers/subgraphs.md)
