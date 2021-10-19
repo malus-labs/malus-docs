@@ -14,18 +14,18 @@ Please note that as our application grows, there will be different versions of t
 
 These are the main smart contracts which this subgraph is indexing.
 
-| Contract                   | Address                                    | Description |
-| -------------------------- | ------------------------------------------ | ----------- |
-| **mUSDC**                  | coming soon.                               |             |
-| **aUSDC**                  | 0xBcca60bB61934080951369a648Fb03DF4F96263C |             |
-| **USDC**                   | 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 |             |
-| **Metadata**               | coming soon.                               |             |
-| **Verification**           | coming soon.                               |             |
-| **ENSRegistry**            | 0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e |             |
-| **ENSRegistryOld**         | 0x314159265dd8dbb310642f98f50c066173c1259b |             |
-| **Resolver**               | 0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41 |             |
-| **BaseRegistrar**          | 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85 |             |
-| **EthRegistrarController** | 0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5 |             |
+| Contract                   | Address                                    | Description                                                                                                                    |
+| -------------------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------ |
+| **mUSDC**                  | coming soon.                               | The main contract for Malus's mUSDC token and where all stores are deployed.                                                   |
+| **aUSDC**                  | 0xBcca60bB61934080951369a648Fb03DF4F96263C | The main contract for Aave's Version 2 aUSDC Token.                                                                            |
+| **USDC**                   | 0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48 | The main contract for the USDC token.                                                                                          |
+| **Metadata**               | coming soon.                               | The contract where all store's metadata gets updated.                                                                          |
+| **Verification**           | coming soon.                               | The contract where verification is added and removed for all ENS names.                                                        |
+| **ENSRegistry**            | 0x00000000000C2E074eC69A0dFb2997BA6C7d2e1e | The main contract for all ENS lookups and subdomain nodes.                                                                     |
+| **ENSRegistryOld**         | 0x314159265dd8dbb310642f98f50c066173c1259b | The old ENS registry contract for all earlier names.                                                                           |
+| **Resolver**               | 0x4976fb03C32e5B8cfe2b6cCB31c09Ba78EBaBa41 | The main contract that is the public resolver for all ENS names.                                                               |
+| **BaseRegistrar**          | 0x57f1887a8BF19b14fC0dF6Fd9B2acc9Af147eA85 | The base registrar contract that is called by the EthRegistrarController to transfer ownership of a ENS name to the new owner. |
+| **EthRegistrarController** | 0x283Af0B28c62C092C9727F1Ee09c02CA627EB7F5 | The main contract where all new ENS names are registered.                                                                      |
 
 
 
