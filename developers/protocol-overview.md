@@ -1,9 +1,9 @@
 # Protocol Overview
 
-The protocol consist of five main smart contracts and four of which are the main core of the application. The figure provided below is a high level overview of the Malus protocol and how it works. 
+The protocol consist of five main smart contracts and four of which are the main core of the application. The figure provided below is a high level overview of the Malus protocol and how it works.&#x20;
 
 {% hint style="info" %}
-Please note that this figure only uses USDC, aUSDC, and mUSDC. Each store has to ability to produce mUSDT and mDAI based on the staked aUSDT and aDAI respectively. 
+Please note that this figure only uses USDC, aUSDC, and mUSDC. Each store has to ability to produce mUSDT and mDAI based on the staked aUSDT and aDAI respectively.&#x20;
 {% endhint %}
 
 ![](../.gitbook/assets/malus-usdc-flow-chart.jpg)
@@ -14,11 +14,11 @@ The first four smart contracts we will cover are the main core of the applicatio
 
 Before getting familiar with the functions, we first need to understand the options available and their associated aTokens and mTokens.
 
-| Option | aToken | mToken |
+| aToken | Option | mToken |
 | ------ | ------ | ------ |
-| 0      | aUSDC  | mUSDC  |
-| 1      | aUSDT  | mUSDT  |
-| 2      | aDAI   | mDAI   |
+| aUSDC  | 0      | mUSDC  |
+| aUSDT  | 1      | mUSDT  |
+| aDAI   | 2      | mDAI   |
 
 
 
@@ -32,7 +32,7 @@ function sendERC20(
 ) 
 ```
 
-This function can be used to send all ERC20 tokens from the store. Note that sending aTokens requires that only the available amount can be sent. 
+This function can be used to send all ERC20 tokens from the store. Note that sending aTokens requires that only the available amount can be sent.&#x20;
 
 | Name              | Type    | Description                                  |
 | ----------------- | ------- | -------------------------------------------- |
@@ -48,7 +48,7 @@ function claimStoreHubBalance(
 )
 ```
 
-This function is used to withdraw all the total payment from the store hub and remove any additional stake by the specified aToken. 
+This function is used to withdraw all the total payment from the store hub and remove any additional stake by the specified aToken.&#x20;
 
 | Name       | Type | Description                           |
 | ---------- | ---- | ------------------------------------- |
@@ -92,7 +92,7 @@ function getExtensionCollateral(
 )
 ```
 
- This function is used to return the current extension and amount of collateral by aToken associated with a store.
+&#x20;This function is used to return the current extension and amount of collateral by aToken associated with a store.
 
 | Name       | Type | Description                           |
 | ---------- | ---- | ------------------------------------- |
@@ -109,7 +109,7 @@ function provideCollateralRelief(
 )
 ```
 
-This function is used to add and remove collateral relief based on the selected aToken. 
+This function is used to add and remove collateral relief based on the selected aToken.&#x20;
 
 | Name             | Type    | Description                                                      |
 | ---------------- | ------- | ---------------------------------------------------------------- |
@@ -353,7 +353,7 @@ function setMetaData(
 )
 ```
 
-This function is used to set the Store's ENS name and other descriptive information such as city, type, zip code etc. Note that only the currently owner of a store can update its metadata. 
+This function is used to set the Store's ENS name and other descriptive information such as city, type, zip code etc. Note that only the currently owner of a store can update its metadata.&#x20;
 
 | Name             | Type    | Description                                   |
 | ---------------- | ------- | --------------------------------------------- |
