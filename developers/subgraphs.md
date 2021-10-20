@@ -29,11 +29,70 @@ These are the main smart contracts which this subgraph is indexing.
 
 
 
+
+
 ### Entities&#x20;
 
 These are the main objects you can query using GraphQL to find these necessary information you will need. There are currently only four entities which are User, Store, Domain, and CollateralRelief.
 
+####
 
+#### User
+
+This entity is for all current and previous owners who had control of a store.
+
+| Name   | Type | Description                     |
+| ------ | ---- | ------------------------------- |
+| **id** | ID   | The wallet address of the owner |
+
+
+
+
+
+#### Domain
+
+This entity is for all ENS names that were created.
+
+| Name           | Type    | Description |
+| -------------- | ------- | ----------- |
+| **id**         | ID      |             |
+| **labelName**  | String  |             |
+| **name**       | String  |             |
+| **store**      | Store   |             |
+| **isVerified** | Boolean |             |
+
+
+
+
+
+#### Store
+
+This entity is for all new stores that are deployed in the Malus Protocol.
+
+{% hint style="info" %}
+Please note that the available aToken balances are not present in the Store entity. This is mainly because no events are emitted from the aUSDC contract while interest is accruing.
+{% endhint %}
+
+| Name                 | Type   | Description |
+| -------------------- | ------ | ----------- |
+| **id**               |        |             |
+| **owner**            |        |             |
+| **creationDate**     |        |             |
+| **ensName**          | Domain |             |
+| **address**          |        |             |
+| **availableUSDC**    |        |             |
+| **stake**            |        |             |
+| **collateral**       |        |             |
+| **collateralRelief** |        |             |
+| **extension**        |        |             |
+| **country**          |        |             |
+| **city**             |        |             |
+| **isVerified**       |        |             |
+| **name**             |        |             |
+| **street**           |        |             |
+| **website**          |        |             |
+| **type**             |        |             |
+| **zipcode**          |        |             |
 
 
 
