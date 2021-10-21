@@ -53,13 +53,13 @@ This entity is for all current and previous owners who had control of a store.
 
 This entity is for all ENS names that were created.
 
-| Name           | Type    | Description |
-| -------------- | ------- | ----------- |
-| **id**         | ID      |             |
-| **labelName**  | String  |             |
-| **name**       | String  |             |
-| **store**      | Store   |             |
-| **isVerified** | Boolean |             |
+| Name           | Type    | Description                                                           |
+| -------------- | ------- | --------------------------------------------------------------------- |
+| **id**         | ID      | The node of the ENS name.                                             |
+| **labelName**  | String  | This is the ENS name without its parent name.                         |
+| **name**       | String  | This is the actually ENS name                                         |
+| **store**      | Store   | The Store that belongs to this ENS name                               |
+| **isVerified** | Boolean | The Boolean value letting us know if a store's ENS name is verified.  |
 
 
 
@@ -75,20 +75,18 @@ Please note that the available aToken balances are not present in the Store enti
 
 | Name                 | Type   | Description |
 | -------------------- | ------ | ----------- |
-| **id**               |        |             |
-| **owner**            |        |             |
-| **creationDate**     |        |             |
+| **id**               | ID     |             |
+| **owner**            | User   |             |
+| **creationDate**     | BigInt |             |
 | **ensName**          | Domain |             |
-| **address**          |        |             |
-| **availableUSDC**    |        |             |
-| **stake**            |        |             |
-| **collateral**       |        |             |
-| **collateralRelief** |        |             |
+| **address**          | String |             |
+| **availableUSDC**    | BigInt |             |
+| **stake**            | BigInt |             |
+| **collateral**       | BigInt |             |
+| **collateralRelief** | BigInt |             |
 | **extension**        |        |             |
 | **country**          |        |             |
 | **city**             |        |             |
-| **isVerified**       |        |             |
-| **name**             |        |             |
 | **street**           |        |             |
 | **website**          |        |             |
 | **type**             |        |             |
