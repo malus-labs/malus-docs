@@ -101,15 +101,15 @@ Please note that the available aToken balances are not present in the Store enti
 This entity is used to for Collateral Relief that was previously or currently up for sale by another store.&#x20;
 
 {% hint style="info" %}
-Please note that a rate of zero means the Collateral Relief order was already filled or cancel by a store.&#x20;
+Please note that a rate of zero means the Collateral Relief order was already filled or canceled by a store.&#x20;
 {% endhint %}
 
-| Name       | Type   | Description                                                        |
-| ---------- | ------ | ------------------------------------------------------------------ |
-| **id**     | ID     | The id for the Collateral Relief which is the store's id plus the  |
-| **rate**   | BigInt | The rate at which the Collateral Relief is selling.                |
-| **amount** | BigInt | The amount of collateral Relief a store owner is selling.          |
-| **store**  | Store  | The store that is selling the Collateral Relief.                   |
+| Name       | Type   | Description                                                             |
+| ---------- | ------ | ----------------------------------------------------------------------- |
+| **id**     | ID     | The id for the Collateral Relief which is the store's id plus the rate. |
+| **rate**   | BigInt | The rate at which the Collateral Relief is selling.                     |
+| **amount** | BigInt | The amount of collateral Relief a store owner is selling.               |
+| **store**  | Store  | The store that is selling the Collateral Relief.                        |
 
 
 
