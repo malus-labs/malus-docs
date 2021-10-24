@@ -6,7 +6,7 @@ The protocol consist of five main smart contracts and four of which are the main
 Please note that this figure only uses USDC, aUSDC, and mUSDC. Each store has to ability to produce mUSDT and mDAI based on the staked aUSDT and aDAI respectively.&#x20;
 {% endhint %}
 
-![](../.gitbook/assets/malus-usdc-flow-chart.jpg)
+![](<../.gitbook/assets/Malus USDC Flow chart.drawio.png>)
 
 The first four smart contracts we will cover are the main core of the application.
 
