@@ -70,27 +70,29 @@ This entity is for all ENS names that were created.
 This entity is for all new stores that are deployed in the Malus Protocol.
 
 {% hint style="info" %}
-Please note that the available aToken balances are not present in the Store entity. This is mainly because no events are emitted from the aUSDC contract while interest is accruing.
+Please note that the available aToken balances are not present in the Store entity. This is mainly because no events are emitted from the aUSDC contract while interest is accruing. In addition, there are three redundant fields in this entity which are address, isVerified, and name. This is due to the current query constraints on The Graph protocol. &#x20;
 {% endhint %}
 
-| Name                 | Type   | Description |
-| -------------------- | ------ | ----------- |
-| **id**               | ID     |             |
-| **owner**            | User   |             |
-| **creationDate**     | BigInt |             |
-| **ensName**          | Domain |             |
-| **address**          | String |             |
-| **availableUSDC**    | BigInt |             |
-| **stake**            | BigInt |             |
-| **collateral**       | BigInt |             |
-| **collateralRelief** | BigInt |             |
-| **extension**        |        |             |
-| **country**          |        |             |
-| **city**             |        |             |
-| **street**           |        |             |
-| **website**          |        |             |
-| **type**             |        |             |
-| **zipcode**          |        |             |
+| Name                 | Type    | Description |
+| -------------------- | ------- | ----------- |
+| **id**               | ID      |             |
+| **owner**            | User    |             |
+| **creationDate**     | BigInt  |             |
+| **ensName**          | Domain  |             |
+| **address**          | String  |             |
+| **availableUSDC**    | BigInt  |             |
+| **stake**            | BigInt  |             |
+| **collateral**       | BigInt  |             |
+| **collateralRelief** | BigInt  |             |
+| **extension**        | String  |             |
+| **country**          | String  |             |
+| **city**             | String  |             |
+| **isVerified**       | Boolean |             |
+| **name**             | String  |             |
+| **street**           | String  |             |
+| **website**          | String  |             |
+| **type**             | String  |             |
+| **zipcode**          | String  |             |
 
 
 
