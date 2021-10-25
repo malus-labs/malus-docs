@@ -57,7 +57,7 @@ This entity is for all ENS names that were created.
 | -------------- | ------- | --------------------------------------------------------------------- |
 | **id**         | ID      | The node of the ENS name.                                             |
 | **labelName**  | String  | This is the ENS name without its parent name.                         |
-| **name**       | String  | This is the actually ENS name                                         |
+| **name**       | String  | This is the full ENS name along with its parent name.                 |
 | **store**      | Store   | The Store that belongs to this ENS name                               |
 | **isVerified** | Boolean | The Boolean value letting us know if a store's ENS name is verified.  |
 
@@ -73,26 +73,26 @@ This entity is for all new stores that are deployed in the Malus Protocol.
 Please note that the available aToken balances are not present in the Store entity. This is mainly because no events are emitted from the aUSDC contract while interest is accruing. In addition, there are three redundant fields in this entity which are address, isVerified, and name. This is due to the current query constraints on The Graph protocol. &#x20;
 {% endhint %}
 
-| Name                 | Type    | Description |
-| -------------------- | ------- | ----------- |
-| **id**               | ID      |             |
-| **owner**            | User    |             |
-| **creationDate**     | BigInt  |             |
-| **ensName**          | Domain  |             |
-| **address**          | String  |             |
-| **availableUSDC**    | BigInt  |             |
-| **stake**            | BigInt  |             |
-| **collateral**       | BigInt  |             |
-| **collateralRelief** | BigInt  |             |
-| **extension**        | String  |             |
-| **country**          | String  |             |
-| **city**             | String  |             |
-| **isVerified**       | Boolean |             |
-| **name**             | String  |             |
-| **street**           | String  |             |
-| **website**          | String  |             |
-| **type**             | String  |             |
-| **zipcode**          | String  |             |
+| Name                 | Type    | Description                                                                                         |
+| -------------------- | ------- | --------------------------------------------------------------------------------------------------- |
+| **id**               | ID      | The id for the store which is its wallet address.                                                   |
+| **owner**            | User    | The user that owns the store.                                                                       |
+| **creationDate**     | BigInt  | The epoch time when the store was created.                                                          |
+| **ensName**          | Domain  | The ENS name that belongs to this store.                                                            |
+| **address**          | String  | The Ethereum wallet address for the store.                                                          |
+| **availableUSDC**    | BigInt  | The amount of USDC the store owner has to spend. This includes both claimed and unclaimed amounts.  |
+| **stake**            | BigInt  | The amount of aUSDC the store currently has staked.                                                 |
+| **collateral**       | BigInt  | The amount of aUSDC the store has collateral.                                                       |
+| **collateralRelief** | BigInt  | The total amount of aUSDC the store has collateral relief.                                          |
+| **extension**        | String  | The current extension that the store is using.                                                      |
+| **country**          | String  | The country location the store owner has entered.                                                   |
+| **city**             | String  | The city location the store owner has entered.                                                      |
+| **isVerified**       | Boolean | The Boolean value letting us know if a store's ENS name is verified.                                |
+| **name**             | String  | This is the full ENS name along with its parent name.                                               |
+| **street**           | String  | The street location the store owner has entered.                                                    |
+| **website**          | String  | The website the store owner has entered.                                                            |
+| **type**             | String  | The type the store owner has entered. For example, NFT, restaurant etc.                             |
+| **zipcode**          | String  | The zip code location the store owner has entered.                                                  |
 
 
 
