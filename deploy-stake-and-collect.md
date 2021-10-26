@@ -1,6 +1,6 @@
 # Deploy, Stake, and Collect
 
-This page is for users who are selling their goods and services and don't wish to give discounts. We will provide steps that will help you setup a store to better service your customers.
+This page is for users who are selling their goods and services and wish to gain interest off the money they lose giving discounts. We will provide steps that will help you setup a store to better service your customers.
 
 
 
@@ -14,7 +14,7 @@ Make sure you are in the manage section of the application and click the deploy 
 
 ### Step2
 
-Once the store is deployed, we can hover over the store and observe that the available funds, collateral, stake, and collateral relief are all zero. We can proceed to click on the store. 
+Once the store is deployed, we can hover over the store and observe that the available funds, collateral, stake, and collateral relief are all zero. We can proceed to click on the store.&#x20;
 
 ![](<.gitbook/assets/Step2 (1).png>)
 
@@ -22,7 +22,7 @@ Once the store is deployed, we can hover over the store and observe that the ava
 
 ### Step3
 
-Since this store has no money inside of it, we need to copy the wallet address which can be found under the qrcode. 
+Since this store has no money inside of it, we need to copy the wallet address which can be found under the qrcode.&#x20;
 
 ![](<.gitbook/assets/Step3 (1).png>)
 
@@ -30,7 +30,7 @@ Since this store has no money inside of it, we need to copy the wallet address w
 
 ### Step4
 
-We will now head over to our Metamask wallet and send 100 aUSDC to the store. 
+We will now head over to our wallet and send 100 aUSDC to the store.&#x20;
 
 {% hint style="warning" %}
 Please note that you should only send V2 of Aave's aTokens to the store contract.
@@ -58,10 +58,10 @@ If we exit the store after the transaction, we can now observe that the store ha
 
 ### Step7
 
-We now have received 1000 USDC in total payments and have used up our 70 aUSDC staked. We can proceed to click and open the store. 
+We now have received 1000 USDC in total payments and have used up our 70 aUSDC staked. We can proceed to click and open the store.&#x20;
 
 {% hint style="info" %}
-Please note that even though we have 1k available funds, it is actually 1030 which includes 30 aUSDC and 1000 USDC. In addition, our 70 stake is now collateral. It will display on the store after we have claimed in the next step. 
+Please note that even though we have 1k available funds, it is actually 1030 which includes 30 aUSDC and 1000 USDC. In addition, our 70 stake is now collateral. It will display on the store after we have claimed in the next step.&#x20;
 {% endhint %}
 
 ![](.gitbook/assets/Step7.png)
@@ -70,10 +70,10 @@ Please note that even though we have 1k available funds, it is actually 1030 whi
 
 ### Step8
 
-Once we have opened the store, we need to head to our assets by clicking on the first icon. After which, we must make sure we hit the drop down menu and select USDC. Usually, if you see a green claim button it means we have USDC in the Store hub. We will proceed to click the green button to claim our USDC. 
+Once we have opened the store, we need to head to our assets by clicking on the first icon. After which, we must make sure we hit the drop down menu and select USDC. Usually, if you see a green claim button it means we have USDC in the Store hub. We will proceed to click the green button to claim our USDC.&#x20;
 
 {% hint style="info" %}
-Sometimes we might not need to claim if the amount we are sending currently in the store and not the Store hub. 
+Sometimes we might not need to claim if the amount we are sending currently in the store and not the Store hub.&#x20;
 {% endhint %}
 
 ![](.gitbook/assets/Step8.png)
@@ -85,7 +85,7 @@ Sometimes we might not need to claim if the amount we are sending currently in t
 Now before we proceed we have the option to cancel the claim. We will click on continue and finish out claim.
 
 {% hint style="warning" %}
-Please note that if you claim before using up all your remaining stake, Your stake will be reset to zero and added back to your available funds. 
+Please note that if you claim before using up all your remaining stake, Your stake will be reset to zero and added back to your available funds.&#x20;
 {% endhint %}
 
 ![](.gitbook/assets/Step9.png)
@@ -94,7 +94,7 @@ Please note that if you claim before using up all your remaining stake, Your sta
 
 ### Step10
 
-Once we have claimed, we can proceed to send 1000 USDC to any personal wallet address we choose to. 
+Once we have claimed, we can proceed to send 1000 USDC to any personal wallet address we choose to.&#x20;
 
 ![](.gitbook/assets/Step10.png)
 
